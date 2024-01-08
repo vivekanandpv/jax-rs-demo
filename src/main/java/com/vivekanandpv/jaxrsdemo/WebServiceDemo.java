@@ -1,5 +1,6 @@
 package com.vivekanandpv.jaxrsdemo;
 
+import com.vivekanandpv.jaxrsdemo.models.Book;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;
 import jakarta.jws.soap.SOAPBinding;
@@ -9,4 +10,7 @@ import jakarta.jws.soap.SOAPBinding;
 public interface WebServiceDemo {
     @WebMethod
     String getMessage(String name);
+
+    @WebMethod
+    Book getBook();
 }
